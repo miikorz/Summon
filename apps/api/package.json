@@ -1,0 +1,28 @@
+{
+  "author": "",
+  "dependencies": {
+    "@fastify/cors": "^11.2.0",
+    "@summon/types": "workspace:*",
+    "dotenv": "^17.2.3",
+    "fastify": "^5.6.2",
+    "mongoose": "^9.0.1"
+  },
+  "description": "",
+  "devDependencies": {
+    "@types/mongoose": "^5.11.97",
+    "@types/node": "^25.0.2",
+    "nodemon": "^3.1.11",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.3"
+  },
+  "keywords": [],
+  "license": "ISC",
+  "main": "index.js",
+  "name": "api",
+  "packageManager": "pnpm@10.26.0",
+  "scripts": {
+    "dev": "nodemon src/index.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "version": "1.0.0"
+}

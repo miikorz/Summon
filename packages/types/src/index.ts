@@ -35,6 +35,7 @@ export interface Game {
   filledSlots: number;
   location: GameLocation; // [cite: 32]
   disclaimers: string[]; // [cite: 8]
+  whatsappLink?: string;
   createdAt: Date;
 }
 

@@ -2,7 +2,7 @@ import Fastify from 'fastify';
 import mongoose from 'mongoose';
 import cors from '@fastify/cors';
 import dotenv from 'dotenv';
-
+import { gameRoutes } from './routes/gameRoutes';
 dotenv.config();
 
 const server = Fastify({ logger: true });
@@ -11,7 +11,7 @@ server.register(cors);
 server.get('/ping', async () => {
   return { status: 'ok', msg: 'Summon API Ready' };
 });
-
+server.register(gameRoutes, { prefix: '/api/games' });
 const start = async () => {
   try {
     await mongoose.connect(process.env.MONGO_URI!);

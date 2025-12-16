@@ -1,1 +1,14 @@
 node_modules
+.DS_Store
+.env
+.turbo/
+dist/
+build/
+coverage/
+*.log
+
+# Generated files
+packages/types/src/*.d.ts
+packages/types/src/*.d.ts.map
+packages/types/src/*.js
+packages/types/src/*.js.map
